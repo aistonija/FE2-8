@@ -1,0 +1,97 @@
+/* global & common */
+
+* {
+  margin: 0;
+}
+
+body {
+  padding: 2rem 3rem;
+  background: white;
+}
+
+.base {
+  background: rgb(245, 245, 245);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* navigation */
+
+nav,
+nav > ul {
+  display: flex;
+}
+
+nav {
+  justify-content: space-between;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+li {
+  margin-left: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* header */
+
+header > h1,
+footer > p {
+  text-align: center;
+}
+
+header > p {
+  width: 40%;
+  font-size: 1.2rem;
+  margin: 1rem auto 3rem auto;
+  text-align: justify;
+}
+
+/* main articles */
+
+h2,
+header > h1 {
+  text-transform: uppercase;
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.content img {
+  width: 40%;
+}
+
+.content > p,
+.content > ul {
+  width: 60%;
+}
+
+.content > ul li:before {
+  content: "- ";
+}
+
+/* footer */
+
+footer > div {
+  display: flex;
+  margin-bottom: 2rem;
+  justify-content: space-around;
+}
+
+footer a {
+  font-size: 1.2rem;
+}
