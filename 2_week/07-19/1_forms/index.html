@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML forms</title>
+  </head>
+  <body>
+    <form novalidate>
+      <input type="text" placeholder="jusu vardas" name="fName" />
+      <input type="email" placeholder="jusu el pastas" name="email" />
+      <input type="submit" value="pateikti" />
+    </form>
+    <div class="output"></div>
+    <script>
+      const form = document.querySelector("form");
+      const output = document.querySelector(".output");
+
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        const firstName = event.target.elements.fName.value;
+        const email = event.target.elements.email.value;
+
+        const outputText = document.createElement("p");
+        outputText.textContent = `Aciu, registracija sekminga`;
+
+        form.style.display = "none";
+        output.append(outputText);
+      });
+    </script>
+  </body>
+</html>
