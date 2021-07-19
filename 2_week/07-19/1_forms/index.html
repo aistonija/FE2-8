@@ -5,12 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML forms</title>
+    <style>
+      .field {
+        padding: 10px;
+      }
+      button {
+        padding: 5px;
+      }
+    </style>
   </head>
   <body>
-    <form action="result.html" novalidate>
-      <input type="text" placeholder="jusu vardas" name="fName" />
-      <input type="email" placeholder="jusu el pastas" name="email" />
-      <input type="submit" value="pateikti" />
+    <form novalidate>
+      <input class="field" type="text" placeholder="jusu vardas" name="fName" />
+
+      <input
+        class="field"
+        type="email"
+        placeholder="jusu el pastas"
+        name="email"
+      />
+
+      <input type="submit" value="submit" />
     </form>
   </body>
 </html>
