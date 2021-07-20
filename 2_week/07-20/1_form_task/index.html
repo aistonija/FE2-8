@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Formos</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <h1>Transporto priemonės nuoma</h1>
+        <form action="thanks.html">
+          <fieldset>
+            <legend>Asmeninė informacija:</legend>
+            <div class="input-group">
+              <label for="fname">Jūsų Vardas:</label>
+              <input
+                type="text"
+                id="fname"
+                name="fname"
+                placeholder="pvz. Aiste"
+              />
+            </div>
+            <div class="input-group">
+              <label for="lname">Jūsų Pavardė:</label>
+              <input
+                type="text"
+                id="lname"
+                name="lname"
+                placeholder="pvz. Zup"
+              />
+            </div>
+            <div class="input-group">
+              <label for="email">Jūsų Elektroninio pašto adresas:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="pvz. aiste.zu@gmail.com"
+              />
+            </div>
+            <div class="input-group">
+              <label for="email">Jūsų telefono numeris:</label>
+              <input
+                type="tel"
+                id="email"
+                name="email"
+                placeholder="pvz. +3706-36-35-999"
+                pattern="[+][3][7][0][0-9]{8}"
+              />
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Paslaugos detalės:</legend>
+            <div class="input-group">
+              <label for="transport">Pasirinkite paslaugą:</label>
+              <select name="transport" id="transport">
+                <option value="0">Transporto priemonė</option>
+                <option value="auto">Automobilis</option>
+                <option value="scooter">Paspirtukas</option>
+                <option value="bicycle">Dviratis</option>
+              </select>
+            </div>
+            <div class="input-group">
+              <p>Ar turite vairuotojo pažymėjimą?</p>
+              <div>
+                <input
+                  type="radio"
+                  name="license"
+                  id="hasLicense"
+                  value="Taip"
+                />
+                <label for="hasLicense">Taip</label>
+                <input type="radio" name="license" id="noLicense" value="Ne" />
+                <label for="noLicense">Ne</label>
+              </div>
+            </div>
+            <div class="input-group">
+              <label for="dateFrom"
+                >Pasirinkite datą ir laiką, nuo kada norite išsinuomuoti
+                transporto priemonę?</label
+              >
+              <input
+                type="datetime-local"
+                id="dateFrom"
+                name="dateFrom"
+                value="2021-07-19T00:00"
+                min="2021-07-19T00:00"
+                max="2021-08-31T00:00"
+              />
+            </div>
+            <div class="input-group">
+              <label for="dateFrom"
+                >Pasirinkite datą ir laiką, iki kada norite išsinuomuoti
+                transporto priemonę?</label
+              >
+              <input
+                type="datetime-local"
+                id="dateFrom"
+                name="dateFrom"
+                value="2021-09-15T00:00"
+                min="2021-07-19T00:00"
+                max="2021-09-15T00:00"
+              />
+            </div>
+            <div class="input-group">
+              <label for="cityChoice"
+                >Pasirinkite kuriame mieste nuomuositės priemonę:</label
+              >
+              <input list="cities" id="cityChoice" name="cityChoice" />
+
+              <datalist id="cities">
+                <option value="Kaunas"></option>
+                <option value="Klaipėda"></option>
+                <option value="Vilnius"></option>
+              </datalist>
+            </div>
+          </fieldset>
+          <input type="submit" value="Pateikti" />
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
