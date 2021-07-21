@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+}
+
+main {
+  height: 100vh;
+  background-color: rgb(211, 211, 211);
+}
+
+.block1,
+.block2 {
+  box-sizing: border-box;
+  width: 300px;
+  height: 300px;
+  border: 4px solid olivedrab;
+}
+
+.block1 {
+  padding: 30px;
+  background-color: rgb(163, 170, 150);
+}
+
+.block2 {
+  padding: 50px;
+  background-color: rgb(169, 190, 128);
+}
+
+.block3 {
+  width: 45%;
+  height: 100px;
+  background-color: paleturquoise;
+}
+
+.block4 {
+  height: 250px;
+  width: 200px;
+  border: 5px solid orangered;
+  background-image: url("location.jpg");
+}
+
+button {
+  width: 200px;
+  padding: 20px;
+  margin: 10px;
+  border: 2px solid orangered;
+}
