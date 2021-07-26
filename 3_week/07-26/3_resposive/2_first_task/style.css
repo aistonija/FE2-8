@@ -1,0 +1,35 @@
+/* default mobile view */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.parent {
+  height: 100vh;
+}
+
+.child {
+  height: 250px;
+  background-color: lightblue;
+}
+
+/* tablet view */
+@media only screen and (min-width: 786px) {
+  .child {
+    width: 50%;
+    margin: 0 auto;
+    height: 350px;
+    background-color: lightyellow;
+  }
+}
+
+/* desktop view */
+@media only screen and (min-width: 1200px) {
+  .child {
+    width: 33.3%;
+    height: 450px;
+    background-color: lightgreen;
+  }
+}
