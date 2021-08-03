@@ -93,10 +93,6 @@ nav {
     display: none;
   }
 
-  .gallery {
-    justify-content: space-between;
-  }
-
   .pic {
     width: calc(33.33% - 20px);
   }
@@ -106,6 +102,10 @@ nav {
   .container {
     max-width: 1500px;
     margin: 0 auto;
+  }
+
+  .gallery {
+    justify-content: space-between;
   }
 
   .pic {
