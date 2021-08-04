@@ -41,3 +41,59 @@ body {
 .gray {
   background-color: lightgray;
 }
+
+@media only screen and (min-width: 450px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 100px) 300px repeat(3, 125px) repeat(2, 100px);
+    grid-template-areas:
+      "line1 ."
+      "line2 line2"
+      "lime lime"
+      "blue1 blue1"
+      "blue2 blue2"
+      "blue3 blue3"
+      "gray1 gray2"
+      "gray3 gray4";
+  }
+
+  .orange1 {
+    grid-area: line1;
+  }
+
+  .orange2 {
+    grid-area: line2;
+  }
+
+  .lime {
+    grid-area: lime;
+  }
+
+  .blue1 {
+    grid-area: blue1;
+  }
+
+  .blue2 {
+    grid-area: blue2;
+  }
+
+  .blue3 {
+    grid-area: blue3;
+  }
+
+  .gray1 {
+    grid-area: gray1;
+  }
+
+  .gray2 {
+    grid-area: gray2;
+  }
+
+  .gray3 {
+    grid-area: gray3;
+  }
+
+  .gray4 {
+    grid-area: gray4;
+  }
+}
