@@ -19,9 +19,52 @@ body {
   padding: 2rem;
 }
 
+.flex-container {
+  border: 2px solid var(--limey);
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div:not(.flex-container) {
+  padding: 1rem;
+}
+
+.wide {
+  background-color: lightblue;
+  width: 100%;
+  height: 100px;
+}
+
+.block {
+  background-color: lightgoldenrodyellow;
+  width: 50%;
+  height: 100px;
+}
+
+.block2 {
+  background-color: lightseagreen;
+  width: 50%;
+  height: 100px;
+}
+
+.grid-container {
+  border: 2px solid var(--yellow);
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 200px 200px;
+  gap: 10px;
+}
+
 .item {
   text-align: center;
   background-color: var(--yellow);
   border-radius: 0.4rem;
   padding: 1rem;
+}
+
+.item1 {
+  /* grid-column-start: 1;
+  grid-column-end: 3; */
+  grid-row: 1 / 3;
 }
