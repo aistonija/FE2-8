@@ -99,11 +99,6 @@ footer a {
 }
 
 @media only screen and (min-width: 451px) {
-  header > p {
-    width: 70%;
-    margin: 0 auto;
-  }
-
   .card {
     display: flex;
   }
@@ -120,6 +115,11 @@ footer a {
 @media only screen and (min-width: 991px) {
   .container {
     max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  header > p {
+    width: 70%;
     margin: 0 auto;
   }
 
