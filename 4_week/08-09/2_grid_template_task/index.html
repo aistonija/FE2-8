@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <img class="logo" src="assets/logo.jpg" alt="" />
+        <i class="fas fa-bars"></i>
+        <div class="navigation hidden">
+          <ul>
+            <li>
+              <a href="#">portfolio <i class="fas fa-angle-down"></i></a>
+            </li>
+            <li>
+              <a href="#">client gallery</a>
+            </li>
+            <li>
+              <a href="#">about</a>
+            </li>
+            <li>
+              <a href="#">contact</a>
+            </li>
+          </ul>
+          <div class="socials">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fas fa-share-alt"></i>
+          </div>
+          <button><a href="#">Book Now</a></button>
+        </div>
+      </nav>
+      <main>
+        <img src="assets/img1.jpg" alt="" />
+        <img src="assets/img2.jpg" alt="" />
+        <img src="assets/img3.jpg" alt="" />
+        <img src="assets/img4.jpg" alt="" />
+        <img src="assets/img6.jpg" alt="" />
+        <img src="assets/img5.jpg" alt="" />
+        <img src="assets/img7.jpg" alt="" />
+        <img src="assets/img8.jpg" alt="" />
+        <img src="assets/img9.jpg" alt="" />
+        <img src="assets/img10.jpg" alt="" />
+        <img src="assets/img2.jpg" alt="" />
+        <img src="assets/img5.jpg" alt="" />
+        <img src="assets/img8.jpg" alt="" />
+        <img src="assets/img7.jpg" alt="" />
+        <img src="assets/img6.jpg" alt="" />
+      </main>
+    </div>
+    <script>
+      const menuBar = document.querySelector(".fa-bars");
+
+      menuBar.addEventListener("click", function () {
+        let navigClasses = document.querySelector(".navigation").classList;
+
+        if (navigClasses.contains("hidden")) {
+          navigClasses.remove("hidden");
+          navigClasses.add("show");
+        } else if (navigClasses.contains("show")) {
+          navigClasses.remove("show");
+          navigClasses.add("hidden");
+        }
+      });
+    </script>
+  </body>
+</html>
