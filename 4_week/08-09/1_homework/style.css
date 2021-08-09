@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: lightgray;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px 150px 300px repeat(4, 150px);
+  grid-template-areas:
+    "blue-line"
+    "header"
+    "main-content"
+    "signup"
+    "feat1"
+    "feat2"
+    "feat3";
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line {
+  grid-area: blue-line;
+  background-color: darkblue;
+}
+
+.header {
+  grid-area: header;
+  background-color: darkcyan;
+}
+
+.content {
+  grid-area: main-content;
+  background-color: darkgray;
+}
+
+.signup {
+  grid-area: signup;
+  background-color: lightskyblue;
+}
+
+.feat1 {
+  grid-area: feat1;
+  background-color: lightpink;
+}
+
+.feat2 {
+  grid-area: feat2;
+  background-color: lightgreen;
+}
+
+.feat3 {
+  grid-area: feat3;
+  background-color: lightgoldenrodyellow;
+}
+
+@media only screen and (min-width: 320px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 50px 150px 300px repeat(2, 150px);
+    grid-template-areas:
+      "blue-line blue-line"
+      "header header"
+      "main-content main-content"
+      "signup feat1"
+      "feat2 feat3";
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px 300px 200px 100px 300px;
+    grid-template-areas:
+      "blue-line blue-line blue-line"
+      "header header header"
+      "feat1 feat2 feat3"
+      "signup signup signup"
+      "main-content main-content main-content";
+  }
+}
