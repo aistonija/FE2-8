@@ -1,0 +1,25 @@
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 3em;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.img-square {
+  object-fit: cover;
+}
+
+.img-oranges {
+  object-position: bottom;
+}
+
+.footer-link:hover {
+  color: gray;
+  text-decoration: none;
+}
