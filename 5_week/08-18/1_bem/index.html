@@ -7,5 +7,46 @@
     <link rel="stylesheet" href="style.css" />
     <title>BEM</title>
   </head>
-  <body></body>
+  <body>
+    <!-- simple card in the middle of the page -->
+    <div class="container bg-lighter">
+      <div class="card">
+        <img
+          src="https://cdn.vox-cdn.com/thumbor/frFQQhOsxl8DctGjkR8OLHpdKMs=/0x0:3686x2073/1200x800/filters:focal(1549x743:2137x1331)/cdn.vox-cdn.com/uploads/chorus_image/image/68976842/House_Tour_Liverman_3D6A3138_tour.0.jpg"
+          alt=""
+        />
+        <h2>Summer House</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+          necessitatibus, numquam autem inventore fugit rem!
+        </p>
+        <p class="price">&dollar;150.000</p>
+        <div class="btn-container">
+          <button>read more</button>
+        </div>
+      </div>
+    </div>
+    <!-- BEM'IFIED CARD -->
+    <div class="container bg-darker">
+      <!-- BEM - BLOCK -->
+      <div class="card">
+        <!-- BEM - ELEMENT -->
+        <img
+          src="https://cdn.vox-cdn.com/thumbor/frFQQhOsxl8DctGjkR8OLHpdKMs=/0x0:3686x2073/1200x800/filters:focal(1549x743:2137x1331)/cdn.vox-cdn.com/uploads/chorus_image/image/68976842/House_Tour_Liverman_3D6A3138_tour.0.jpg"
+          class="card__image"
+          alt=""
+        />
+        <!-- BEM - ELEMENT -->
+        <h2 class="card__title">Beach House</h2>
+        <p class="card__description">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates
+          nobis aut error possimus vitae id iure dolor, sit adipisci architecto.
+        </p>
+        <p class="card__price">&dollar;190.000</p>
+        <div class="button-alignment">
+          <button class="card__btn card__btn--active">read more</button>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

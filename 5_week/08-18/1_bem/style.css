@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.bg-lighter {
+  background-color: lightcoral;
+}
+
+.bg-darker {
+  background-color: darkolivegreen;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 500px;
+  padding: 20px;
+  background-color: white;
+}
+
+img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.price {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.btn-container {
+  text-align: right;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: 1px solid lightcoral;
+  background-color: white;
+  color: indianred;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+button:hover {
+  border: 1px solid indianred;
+  background-color: indianred;
+  color: white;
+}
+
+/* BEMIFIED */
+
+.button-alignment {
+  text-align: right;
+}
+
+.card__btn {
+  padding: 0.5rem 1.5rem;
+  font-weight: bold;
+}
+
+.card__btn--active {
+  border: 1px solid darkolivegreen;
+  color: darkolivegreen;
+}
+
+.card__btn--active:hover {
+  border: 1px solid darkolivegreen;
+  background-color: darkolivegreen;
+}
