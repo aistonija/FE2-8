@@ -1,8 +1,16 @@
+.navbar-brand,
+.nav-link,
+.letter-spacing {
+  letter-spacing: 4px;
+}
+
 .card-img-top {
   filter: grayscale(60%);
 }
 
-.card .btn:hover {
+.card .btn:hover,
+.navbar-brand:hover,
+.nav-item:hover {
   background-color: rgb(207, 207, 207);
 }
 
