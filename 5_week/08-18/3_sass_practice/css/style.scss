@@ -25,7 +25,7 @@ $colors: (
 // mixin for media queries
 // variables - breakpoints
 $tablet: 768px;
-$desktop: 1200px;
+$desktop: 1024px;
 
 @mixin tablet {
   @media (min-width: #{$tablet}) {
