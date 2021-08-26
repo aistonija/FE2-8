@@ -47,5 +47,45 @@ console.log(powowow);
 let fixed = num.toFixed();
 console.log("toFixed: ", fixed);
 
-// NaN
+// NaN - Not a Number
 console.log(fixed / "dog");
+
+// ParseInt & ParseFloat
+
+let x = "1.501rem";
+console.log(x, typeof x);
+console.log(Number(x), typeof Number(x));
+console.log(+x, typeof +x);
+console.log(parseInt(x), typeof parseInt(x));
+console.log(parseFloat(x), typeof parseFloat(x));
+
+// ---- Exercise 1 ---- //
+
+// Parašyti kodą, kuris ragina vartotoją įvesti du skaičius.
+// alert() pagalba atvaizduoti sumą.
+
+// let first = +prompt("pirmas skaicius");
+// let second = +prompt("antras skaicius");
+// alert(first + second);
+
+// ---- Exercise 2 ---- //
+
+// Sugeneruokite 5 atsitiktinius skaičius, išsaugokite juos atskiruose kintamuosiuose.
+// Kiekvienas skaičius gali turėti iki 2 skaitmenų po kablelio, bet turi būti ne didesnis negu 10 (10 neįeina).
+
+// Naudodami tinkamus metodus raskite:
+// Didžiausią skaičių;
+// Mažiausią skaičių;
+
+let a = +(Math.random() * 10).toFixed(2);
+let b = +(Math.random() * 10).toFixed(2);
+let c = +(Math.random() * 10).toFixed(2);
+let d = +(Math.random() * 10).toFixed(2);
+let e = +(Math.random() * 10).toFixed(2);
+
+console.log(a, b, c, d, e);
+
+let mini = Math.min(a, b, c, d, e);
+let maxi = Math.max(a, b, c, d, e);
+
+console.log(mini, maxi);
